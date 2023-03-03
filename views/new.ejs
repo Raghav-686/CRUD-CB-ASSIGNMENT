@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet/app.css">
+</head>
+<body>
+    <div class="new-article-main-container">
+        <div class="new-header">New Article</div>
+          <form action="/blogs" method="POST" class="new-form">
+            <div class="field">
+                <label> Title: </label><br>
+                <input type="text" name="blog[title]" placeholder="title">
+            </div>
+
+            <div class="field">
+                    <label> MarkDown </label><br>
+                    <input type="text" name="blog[image]" placeholder="MarkDown">
+             </div>
+
+             <div class="field">
+                    <label> Description: </label><br>
+                    <textarea name="blog[body]"></textarea>
+             </div>
+             <input type="submit" class="new-button">
+          </form>
+    </div>
+</body>
+</html>
+
+<!-- <% include partials/footer %> -->
